@@ -1,0 +1,164 @@
+:root {
+    --dark: #1c1c1c;
+    --fillDark: #E90074;
+    --fillLight: #FF4191;
+    --light: #FFF078;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid white; */
+    color: var(--light);
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: var(--dark);
+    box-sizing: border-box;
+}
+
+/* Navigation plane */
+.hamContainer {
+    position: fixed;
+    left: 0%;
+    width: 30%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ham {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 90%;
+    height: 90%;
+    list-style: none;
+    /* background: linear-gradient(315deg, rgba(28, 28, 28, 0) 0%, rgba(233, 0, 116, 0.5) 5%, rgba(28, 28, 28, 0) 10%, rgba(28, 28, 28, 0) 20%, rgba(233, 0, 116, 0.5) 25%, rgba(28, 28, 28, 0) 30%, rgba(28, 28, 28, 0) 40%, rgba(233, 0, 116, 0.5) 45%, rgba(28, 28, 28, 0) 50%, rgba(28, 28, 28, 0) 60%, rgba(233, 0, 116, 0.5) 65%, rgba(28, 28, 28, 0) 70%, rgba(28, 28, 28, 0) 80%, rgba(233, 0, 116, 0.5) 85%, rgba(28, 28, 28, 0) 90%); */
+    background: linear-gradient(315deg, var(--fillLight)3% , var(--fillDark) 50% , var(--dark) 100%);
+    border-radius: 20px;
+    z-index: 10;
+}
+
+.ham li {
+    width: 90%;
+    height: 50px;
+}
+
+.ham li a {
+    font-weight: 600;
+    font-size: large;
+    text-decoration: none;
+    background-color: var(--fillLight);
+    display: block;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding-top: 25px;
+    transition: 0.2s;
+    transition-delay: 0.5ms;
+}
+
+.ham li a:hover {
+    background-color: var(--fillDark);
+    box-shadow: 0px 0px 20px var(--fillDark);
+}
+
+/* General Content Box starts */
+.contentBox {
+    margin-left: 30%;
+}
+
+/* Home Content Box start */
+.home {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url("../assets/backdark.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.home h1 {
+    color: var(--light);
+}
+
+.home h3 {
+    color: var(--dark);
+}
+
+.home h4 {
+    color: var(--dark);
+}
+
+.info {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px 100px;
+}
+
+.introBox {
+    display: flex;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: var(--fillDark);
+    box-shadow: 10px 10px 25px var(--fillLight);
+}
+
+.introBox img {
+    max-width: 200px;
+    margin-left: 10px;
+    border-radius: 10px;
+    box-shadow: 7px 7px 10px var(--light);
+    border: 5px dashed var(--dark);
+}
+
+/* Portfolio Content Box start */
+.portfolio {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* About Content Box start */
+.about {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* Services Content Box start */
+.services {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* Contact Me Content Box start */
+.contactme {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
