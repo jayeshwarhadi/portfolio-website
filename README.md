@@ -4,3 +4,4 @@ and hence its registered under Creative Commons copyright <br>
 pls dont use without permission . pls
 <br><br> 
 this is the new quicklinks branch
+yay
