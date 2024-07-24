@@ -12,7 +12,7 @@ html {
 * {
     margin: 0;
     padding: 0;
-    /* border: 1px solid white; */
+    border: 1px solid white;
     color: var(--light);
     font-family: "Poppins", sans-serif;
 }
@@ -71,6 +71,18 @@ body {
 .ham li a:hover {
     background-color: var(--fillDark);
     box-shadow: 0px 0px 20px var(--fillDark);
+}
+
+.quicklinks{
+    display: block;
+    width: 90%;
+    height: 60px;
+}
+
+.quicklinks a img {
+    position: relative;
+    top: 0px;
+    max-width: 50px;
 }
 
 /* General Content Box starts */
